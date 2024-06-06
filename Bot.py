@@ -21,7 +21,7 @@ element_id = input("[+] Enter the ID: ")
 name = input("[+] Enter Your Name: ")
 Chat = input("[+] Enter Name Chat: ")
 
-def run(playwright: Playwright) -> 'Page':
+def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
     page = context.new_page()
